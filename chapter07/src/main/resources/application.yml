@@ -1,0 +1,13 @@
+spring:
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: true
+      names: ${job.name:NONE}
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/roach?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
